@@ -1,0 +1,11 @@
+services:
+  - type: worker
+    name: sleme-bot-worker
+    runtime: python
+    environment: python
+    branch: main
+    startCommand: python main.py
+    envVars:
+      - key: BOT_TOKEN
+        fromSecret: BOT_TOKEN
+    buildCommand: pip install python-telegram-bot requests pillow
