@@ -5,7 +5,7 @@ services:
     environment: python
     branch: main
     startCommand: python main.py
+    buildCommand: pip install python-telegram-bot requests pillow
     envVars:
       - key: BOT_TOKEN
-        fromSecret: BOT_TOKEN
-    buildCommand: pip install python-telegram-bot requests pillow
+        value: 8696706532:AAEN6IwwzJ9J5DqXhYeUyqVKwM3okGtXOa8
